@@ -15,7 +15,7 @@
             <tr>
                 <td colspan="4"> <!-- the input bar spreads over # cols-->
                     <!-- disabled - users can't enter numbers-->
-                    <input class="calc-input-box" type="text" disabled>
+                    <input class="calc-input-box" type="text" id="output" disabled >
                 </td>
             </tr>
 
@@ -47,7 +47,7 @@
             <!--Row #4-->
             <tr>
                 <!--Erases/Clears the screen-->
-                <td><input type="button" value="C" onclick="clear()"></td>
+                <td><input type="button" value="C" onclick="clear()" id="clear-btn"></td>
                 
                 <td><input type="button" value="0" onclick="show('0')"></td>
                 <td><input type="button" value="." onclick="show('.')"></td>
@@ -67,7 +67,7 @@
      
 
     <!--reference to the file-->
-    <script type="text/JavaSciprt" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
     </body>
 

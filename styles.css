@@ -2,9 +2,7 @@
     /*includes the padding and border in an element's total width and height
     othewise it can get wonky*/
     box-sizing: border-box;
-
     font-size: 20px;
-    
 }
 
 .calculator{
@@ -13,9 +11,6 @@
     height: 600px;
     background-color:#4b58e9 ;
     border: 1px black solid; /* used for visual refs. remove later */
-   
-
-
 
 }
 .calc-input-box{
@@ -23,6 +18,8 @@
     width: 100%; /* fills width based on the parent width (.calculator)*/
     height: 65%;
     border: 1px black solid;
+    color: #000;
+    text-align: right;
 }
 
 input[type=button]{
@@ -30,8 +27,7 @@ input[type=button]{
     color: #f5f0f3;
     width: 95%;
     height: 70%;
-   box-shadow: none;
-   border-radius: 1em;
+    border-radius: 1em;
 }
 
 input:active[type=button]{
@@ -42,12 +38,12 @@ input:active[type=button]{
 
 }
 
-#total-btn{
+#total-btn,#clear-btn {
     background-color:azure;
     width: 100%;
     color: #e94b4b;
 }
-#total-btn:active{
+#total-btn:active, #clear-btn:active{
     background-color: #e94b4b;
     color: azure;
     width: 100%;
