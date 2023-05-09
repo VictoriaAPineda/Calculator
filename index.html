@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utc-8">
+        <title>Calculator [HMTML/CSS/JavaSciprt]</title>
+        <link rel="stylesheet" href="styles.css">
+
+
+    </head>
+
+    <body>
+
+        <table class="calculator">
+            <!--Row #1-->
+            <tr>
+                <td colspan="4"> <!-- the input bar spreads over # cols-->
+                    <!-- disabled - users can't enter numbers-->
+                    <input class="calc-input-box" type="text" disabled>
+                </td>
+            </tr>
+
+            <!--Row #2-->
+            <tr>
+                <!--show() is a function, will show number within the -->
+                <td><input type="button" value="7" onclick="show('7')"></td>
+                <td><input type="button" value="8" onclick="show('8')"></td>
+                <td><input type="button" value="9" onclick="show('9')"></td>
+                <td><input type="button" value="/" onclick="show('/')"></td>
+            </tr>
+
+            <!--Row #3-->
+            <tr>
+                <td><input type="button" value="4" onclick="show('4')"></td>
+                <td><input type="button" value="5" onclick="show('5')"></td>
+                <td><input type="button" value="6" onclick="show('6')"></td>
+                <td><input type="button" value="-" onclick="show('-')"></td>
+            </tr>
+
+            <!--Row #4-->
+            <tr>
+                <td><input type="button" value="1" onclick="show('4')"></td>
+                <td><input type="button" value="2" onclick="show('5')"></td>
+                <td><input type="button" value="3" onclick="show('6')"></td>
+                <td><input type="button" value="+" onclick="show('+')"></td>
+            </tr>
+        
+            <!--Row #4-->
+            <tr>
+                <!--Erases/Clears the screen-->
+                <td><input type="button" value="C" onclick="clear()"></td>
+                
+                <td><input type="button" value="0" onclick="show('0')"></td>
+                <td><input type="button" value="." onclick="show('.')"></td>
+                <td><input type="button" value="*" onclick="show('*')"></td>
+            </tr>
+            
+            <!--Row #5-->
+            <tr>
+                <td>
+                    <input type="button" value="=" onclick="calc()">
+                </td>
+            </tr>
+
+        </table>
+
+    <!--reference to the file-->
+    <script type="text/JavaSciprt" src="script.js"></script>
+
+    </body>
+
+</html>
