@@ -1,0 +1,23 @@
+*{
+    /*includes the padding and border in an element's total width and height
+    othewise it can get wonky*/
+    box-sizing: border-box;
+    
+}
+
+.calculator{
+    margin: auto; /* centers inside the page*/
+    width: 500px;
+    height: 600px;
+
+    background-color:#eb4abb ;
+    border: 1px black solid; /* used for visual refs. remove later */
+
+
+}
+.calc-input-box{
+    background-color: #f5f0f3;
+    width: 100%; /* fills width based on the parent width (.calculator)*/
+
+ 
+}
