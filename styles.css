@@ -11,8 +11,11 @@
     height: 600px;
     background-color:#4b58e9 ;
     border: 1px black solid; /* used for visual refs. remove later */
+    margin-top: 25px;
+    border-radius: 1em;
 
 }
+
 .calc-input-box{
     background-color: #f5f0f3;
     width: 100%; /* fills width based on the parent width (.calculator)*/
@@ -20,6 +23,9 @@
     border: 1px black solid;
     color: #000;
     text-align: right;
+    border-radius: 1em;
+    padding-right: 10px;
+    
 }
 
 input[type=button]{
@@ -28,6 +34,7 @@ input[type=button]{
     width: 95%;
     height: 70%;
     border-radius: 1em;
+    margin-left: 2px;
 }
 
 input:active[type=button]{
@@ -36,6 +43,9 @@ input:active[type=button]{
     width: 95%;
     height: 70%;
 
+}
+#total-btn{
+    margin: auto;
 }
 
 #total-btn,#clear-btn {
