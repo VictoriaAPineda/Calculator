@@ -4,8 +4,6 @@
         <meta charset="utc-8">
         <title>Calculator [HMTML/CSS/JavaScript]</title>
         <link rel="stylesheet" href="styles.css">
-
-
     </head>
 
     <body>
@@ -15,7 +13,7 @@
             <tr>
                 <td colspan="4"> <!-- the input bar spreads over # cols-->
                     <!-- disabled - users can't enter numbers-->
-                    <input class="calc-input-box" type="text" id="output" disabled >
+                    <input class="calc-input-box" type="text" id="output-bar" disabled >
                 </td>
             </tr>
 
@@ -47,8 +45,7 @@
             <!--Row #4-->
             <tr>
                 <!--Erases/Clears the screen-->
-                <td><input type="button" value="C" onclick="clear()" id="clear-btn"></td>
-                
+                <td><input type="button" value="C" onclick="clearOutput()" id="clear-btn"></td>
                 <td><input type="button" value="0" onclick="show('0')"></td>
                 <td><input type="button" value="." onclick="show('.')"></td>
                 <td><input type="button" value="*" onclick="show('*')"></td>
@@ -57,15 +54,13 @@
             <!--Row #5-->
             <tr id="total-area">
                 <td colspan="4">
-                        <input type="button" value="=" onclick="calc()" id="total-btn">
+                    <input type="button" value="=" onclick="calc()" id="total-btn">
                 </td>
                
             </tr>
 
         </table>
        
-     
-
     <!--reference to the file-->
     <script type="text/javascript" src="script.js"></script>
 
